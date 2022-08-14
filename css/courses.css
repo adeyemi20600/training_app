@@ -1,0 +1,20 @@
+.main_courses_head{
+    font-family: var(--p-font-family);
+    font-weight: 500;
+    color:var(--black-clr);
+    font-size:1.5em;
+}
+
+.main_courses_head > span{
+    position:relative;
+}
+
+.main_courses_head > span::after{
+    content: "";
+    position:absolute;
+    width:70%;
+    height:3px;
+    background-color: var(--primary-clr);
+    bottom:-1px;
+    left:0px;
+}

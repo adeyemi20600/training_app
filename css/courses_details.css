@@ -1,0 +1,165 @@
+:root{
+    --primary-clr : #FFBC04;
+    --black-clr: #4B4B4B;
+    --black-light: #4b4b4bbf;
+    --black-lighter : #4b4b4b80;
+    --grey: #4b4b4b40;
+    --grey-lighter: #4b4b4b1a;
+    --hd-font-family: ubuntu, sans-serif;
+    --p-font-family: lora, sans-serif;
+    --p-alt-font-family:poppins;
+    --header-font-family:roboto;
+    --white-clr: rgba(255,255,255, 0.7);
+    --white-clr-light: rgba(255,255,255, 0.5);
+}
+
+.courses-sub{
+    /* border:1px solid black; */
+    background-color: white;
+    margin-top: 3px;
+    height:30em;
+}
+
+.courses-sub__action{
+    display:grid;
+    position:relative;
+    /* place-items: center; */
+    /* border:1px solid black; */
+    height:100%;
+    place-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
+    background: linear-gradient(#4B4B4B 10%, #191102 40%, #7A7272);
+}
+
+/* .courses-sub__action::after{
+    content:"";
+    width:100%;
+    position:absolute;
+    height:100%;
+    z-index: 999999;
+    background-color:white;
+    bottom:0px;
+    clip-path: polygon(0 0, 100% 0, 100 50%, 0 100%);
+    border:1px solid green;
+
+} */
+
+
+.courses-sub__action > *{
+    /* border:1px solid blue; */
+    margin:1em;
+    padding:0px;
+}
+
+.courses-sub__action > h3{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: var(--header-font-family);
+    color:var(--white-clr);
+}
+
+.courses-sub__action > h5{
+    font-size: 1em;
+    color:var(--white-clr-light);
+    font-family: var(--p-alt-font-family);
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.courses-sub__action > .button-wrapper{
+    text-align:center;
+}
+
+.courses-sub__action > .button-wrapper > a{
+    background-color: var(--primary-clr);
+    color:white;
+    font-family: var(--p-alt-font-family);
+}
+
+
+/*Section b*/
+
+.intro__header{
+    /* border:1px solid black; */
+    color:var(--black-clr);
+    font-family: var(--header-font-family);
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+.header > h3 > span{
+    position:relative;
+}
+
+.header > h3 > span::after{
+    content: "";
+    position:absolute;
+    width:70%;
+    height:3px;
+    background-color: var(--primary-clr);
+    bottom:-1px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.paragraph{
+    font-family: var(--hd-font-family);
+    letter-spacing: 0.5px;
+}
+
+
+/*Third section*/
+
+.objectives{
+    text-align:center;
+    background:#efefef;
+    color:var(--black-clr);
+
+    /* border:1px solid black; */
+  
+}
+
+.objectives > header {
+    padding:2em 0px;
+    /* border:1px solid blue; */
+
+}
+
+.objectives > header > h3{
+  font-family: var(--header-font-family);
+  font-size: 1.7em;
+
+}
+
+.objectives > header > h3 > span{
+    position:relative;
+}
+
+.objectives > header > h3 > span::after{
+    content:"";
+    width:70%;
+    height:3px;
+    position:absolute;
+    background-color: var(--primary-clr);
+    bottom:-1px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.objectives__content > p{
+    font-size:1rem;
+    font-weight: 500;
+    font-family: var(--header-font-family);
+    /* border:1px solid blue; */
+}
+
+.objectives__content > ul{
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: var(--hd-font-family);
+}
+
+.callToAction__big{
+    padding:8px 32px;
+
+}
